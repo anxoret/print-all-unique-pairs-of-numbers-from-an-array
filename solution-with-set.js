@@ -7,12 +7,12 @@ function searchPairs(array, N) {
         arrayOfUniqueNumbers.push(number);
     });;
 
-    for (let currentElement = 0; currentElement < arrayOfUniqueNumbers.length; currentElement++) {
+    for (let current = 0; current < arrayOfUniqueNumbers.length; current++) {
 
-        for (let nextElement = currentElement + 1; nextElement < arrayOfUniqueNumbers.length; nextElement++) {
-            if (arrayOfUniqueNumbers[currentElement] + arrayOfUniqueNumbers[nextElement] == N) {
+        for (let next = current + 1; next < arrayOfUniqueNumbers.length; next++) {
+            if (arrayOfUniqueNumbers[current] + arrayOfUniqueNumbers[next] == N) {
 
-                arrayOfPairs.push([arrayOfUniqueNumbers[currentElement], arrayOfUniqueNumbers[nextElement]]);
+                arrayOfPairs.push([arrayOfUniqueNumbers[current], arrayOfUniqueNumbers[next]]);
             }
         }
 

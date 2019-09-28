@@ -1,3 +1,5 @@
+"use strict"
+
 function searchPairs(array, N) {
 
     let arrayOfPairs = [];
